@@ -1,0 +1,21 @@
+body {
+  text-align: center;
+  font-family: serif;
+font-size: 100%;
+ color: green;
+}
+
+
+.top-container {
+  background-color: black;
+}
+.middle-container {
+background-color: black;
+}
+.bottom-container {
+background-color: black;
+}
+
+.Cyber-Logo {
+  font: bold;
+}
