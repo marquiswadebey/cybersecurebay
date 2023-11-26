@@ -2,18 +2,18 @@ body {
   text-align: center;
   font-family: serif;
 font-size: 100%;
- color: green;
+ color: grey;
 }
 
 
 .top-container {
-  background-color: black;
+  background-color: blue;
 }
 .middle-container {
-background-color: black;
+background-color: blue;
 }
 .bottom-container {
-background-color: black;
+background-color: blue;
 }
 
 .Cyber-Logo {
