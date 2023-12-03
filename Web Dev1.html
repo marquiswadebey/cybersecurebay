@@ -1,100 +1,121 @@
-    <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8"> 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <title> Web Dev 1</title>    
-        <style> 
-            body { 
-            margin: 0; 
-             font-family: Arial, sans-serif; 
-            }  
+<!DOCTYPE html>
+<html lang="en">
 
-              /* Left side with black background */ 
-              .left-side { 
-                   background-color: black; 
-                   width: 25%; 
-                   height: 100vh; 
-                   position: fixed; 
-                   left: 0; 
-                   top: 0;
-                   color: white; /* Set text color to white */ 
-                   padding: 80px;  
-                           } 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fancy Website</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
 
-               /* Right side with fixed image */ 
-                .right-side { 
-                   width: 50%; 
-                   margin-left: 50%; 
-                   background-image:  <img src=Pictures/Pro-Photo 2.jpg/> 
-                   background-size: cover; 
-                   background-attachment: fixed; 
-                   height: 100vh; 
-                   padding-top: 80px;
-                            } 
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
 
-               /* Navigation bar at the top */ 
-               .navbar {
-                   position: fixed; 
-                   top: 0; 
-                   width: 100%; 
-                   background-color: #333; 
-                   padding: 15px; 
-                   z-index: 1; 
-                   text-align: center; 
-                        } 
+        nav {
+            background-color: #444;
+            padding: 1em;
+            text-align: center;
+        }
 
-               /* Navigation buttons */ 
-               .navbar a { 
-                   display: inline-block; 
-                   padding: 10px 20px; 
-                   font-size: 16px; 
-                   text-align: center; 
-                   text-decoration: none; 
-                   cursor: pointer; 
-                   border: 2px solid #a5a9ac; /* Set the color of the outline */ 
-                   border-radius: 20px; /* Set the border radius to make it round */ 
-                   color: #060c10; /* Set the text color */ 
-                   background-color: transparent; /* Set the background color to transparent */ 
-                   transition: background-color 0.3s, color 0.3s; 
-                   background-color: #05150e; /* Change the background color on hover */ 
-                   color: #ffffff; /* Change the text color on hover */ 
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 1em;
+            margin: 0 1em;
+            display: inline-block;
+            transition: color 0.3s ease;
+        }
 
-                        } 
+        nav a:hover {
+            color: #ffcc00; /* Change color on hover */
+        }
 
+        section {
+            padding: 2em;
+            text-align: center;
+        }
 
+        .feature-box {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 2em;
+            margin: 2em;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
 
-               /* Style for the active button */ 
-               .navbar a.active { 
-                   border-bottom: 2px solid white; 
-               } 
-           </style> 
-       </head> 
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
 
 <body>
-  <!-- Navigation bar at the top --> 
+    <header>
+        <h1>Fancy Website</h1>
+    </header>
 
-  <div class="navbar"> 
-    <a href="index.html">Home</a> 
-    <a href="./aboutme.html">About Me</a> 
-    <a href="Contact.html"> Contact Me</a> 
-    <a href="training.html"> Training</a>
-  </div>
+    <nav>
+        <a class="btn" href="index.html>Home</a>
+        <a class="btn" href="WebDev.html">Web Dev</a>
+      
+    </nav>
 
-         <!-- Left side with black background --> 
-         <div class="left-side"> 
-            <h1> Example Web Site</h1>
-            <p> Example Text.</p>
-            <hr />
-            <p> Paragraph Here.</p>
-        </div> 
+    <section id="home">
+        <h2>Welcome to our Fancy Website</h2>
+        <p>Discover a world of elegance and innovation.</p>
+        <div class="feature-box">
+            <h3>Featured Section</h3>
+            <p>Explore our unique and cutting-edge features that set us apart.</p>
+        </div>
+    </section>
 
-                   <!-- Right side with fixed image --> 
-        <div class="right-side"> 
-            <img src="..."\25x50 alt=" Photo Description" /> 
-         </div> 
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="feature-box">
+            <h3>Service 1</h3>
+            <p>Experience top-notch service with a touch of sophistication.</p>
+        </div>
+        <div class="feature-box">
+            <h3>Service 2</h3>
+            <p>Immerse yourself in services that redefine excellence.</p>
+        </div>
+        <!-- Add more service boxes as needed -->
+    </section>
 
-         <!-- Your content goes here --> 
+    <section id="about">
+        <h2>About Us</h2>
+        <div class="feature-box">
+            <h3>Our Story</h3>
+            <p>Learn about our journey and commitment to providing unparalleled experiences.</p>
+        </div>
+    </section>
 
-     </body> 
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="feature-box">
+            <h3>Get in Touch</h3>
+            <p>Connect with us to explore how we can elevate your online presence.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Cyber Secure Bay. All rights reserved.</p>
+    </footer>
+</body>
+
 </html>
